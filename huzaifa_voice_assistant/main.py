@@ -32,11 +32,22 @@ class CommandProcessor:
 
         # Opening websites
         if "google" in command:
-            self.assistant.speak("Opening Google")
-            webbrowser.open("https://www.google.com")
+            if 'search' in command:
+                search = command.replace("google","").replace("search","").strip()
+                self.assistant.speak(f"Searching Google for {search}")
+                search_url = f"https://www.google.com/search?q={'+'.join(search.split())}"
+                webbrowser.open(search_url)    
+            else:
+                self.assistant.speak("Opening Google")
+                webbrowser.open("https://www.google.com")
+
+
         elif "facebook" in command:
             self.assistant.speak("Opening Facebook")
             webbrowser.open("https://www.facebook.com")
+
+
+            
         elif "youtube" in command:
             if "play" in command:
                 song = command.replace("youtube", "").replace("play", "").strip()
@@ -142,8 +153,8 @@ class VoiceRecognizer:
                 print(prompt)
             audio = self.recognizer.listen(source , timeout=10 , phrase_time_limit=5)
             return self.recognizer.recognize_google(audio)
-
-if __name__ == "__main__":
+        
+def run_assistant():
     assistant = Assistant()
     processor = CommandProcessor(assistant)
     recognizer = VoiceRecognizer()
@@ -171,3 +182,6 @@ if __name__ == "__main__":
 
         except Exception as e:
             print("Error:", str(e))
+
+if __name__ == "__main__":
+    run_assistant()

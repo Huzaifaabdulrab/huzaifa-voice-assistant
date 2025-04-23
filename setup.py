@@ -1,8 +1,9 @@
+# setup.py
 from setuptools import setup, find_packages
 
 setup(
     name="huzaifa-voice-assistant",
-    version="0.2.0",
+    version="0.0.2",  # Increase this if re-uploading
     author="Huzaifa Abdulrab",
     description="Voice assistant for visually impaired users using speech recognition.",
     long_description=open("README.md", encoding="utf-8").read(),
