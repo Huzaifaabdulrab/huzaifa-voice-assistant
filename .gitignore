@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.venv/
-$Home
-build
-dist
-huzaifaVoiceAssistant
-huzaifa_voice_assistant.egg-info
-setup.py
