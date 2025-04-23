@@ -6,3 +6,4 @@ build
 dist
 huzaifaVoiceAssistant
 huzaifa_voice_assistant.egg-info
+setup.py
