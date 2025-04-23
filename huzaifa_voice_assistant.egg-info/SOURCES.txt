@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+huzaifa_voice_assistant/__init__.py
+huzaifa_voice_assistant/main.py
+huzaifa_voice_assistant.egg-info/PKG-INFO
+huzaifa_voice_assistant.egg-info/SOURCES.txt
+huzaifa_voice_assistant.egg-info/dependency_links.txt
+huzaifa_voice_assistant.egg-info/requires.txt
+huzaifa_voice_assistant.egg-info/top_level.txt

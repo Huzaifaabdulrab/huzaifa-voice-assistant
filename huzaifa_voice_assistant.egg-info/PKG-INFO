@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: huzaifa-voice-assistant
+Version: 0.1.0
+Summary: Add your description here
+Home-page: https://github.com/Huzaifaabdulrab/huzaifa-voice-assistant
+Author: Huzaifa Abdulrab
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pocketsphinx>=5.0.4
+Requires-Dist: pyaudio>=0.2.14
+Requires-Dist: pyttsx3>=2.98
+Requires-Dist: pywhatkit>=5.4
+Requires-Dist: setuptools>=79.0.0
+Requires-Dist: speechrecognition>=3.14.2
+Requires-Dist: twine>=6.1.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Huzaifa Voice Assistant
+
+This is a voice assistant designed for visually impaired users. It allows voice-based control for opening apps, searching the web, and more — without any keyboard or mouse interaction.
+
+## Installation
+
+```bash
+pip install huzaifa-voice-assistant
