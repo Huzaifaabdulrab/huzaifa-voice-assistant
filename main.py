@@ -41,7 +41,7 @@ class VoiceRecognizer:
 
             # Adjust for ambient noise (background noise) and listen for audio input
             self.recognizer.adjust_for_ambient_noise(source)
-            audio = self.recognizer.listen(source, timeout=20, phrase_time_limit=10)  # Record the audio
+            audio = self.recognizer.listen(source, timeout=10, phrase_time_limit=8)  # Record the audio
             return self.recognizer.recognize_google(audio)  # Convert audio to text using Google's speech recognition
 
 def run_assistant():
