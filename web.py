@@ -22,7 +22,6 @@ class CommandProcessor:
             else:
                 self.assistant.speak("Opening Google")
                 webbrowser.open("https://www.google.com")
-
         elif "facebook" in command:
             self.assistant.speak("Opening Facebook")
             webbrowser.open("https://www.facebook.com")
