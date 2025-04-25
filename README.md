@@ -55,4 +55,5 @@ This is a **Command-Line Interface (CLI)** Python project that listens for the t
 ```bash
 git clone https://github.com/Huzaifaabdulrab/huzaifa-voice-assistant
 cd huzaifa-voice-assistant
+pip install SpeechRecognition pyttsx3 pyaudio
 python main.py
