@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "flask>=3.1.0",
     "pyaudio>=0.2.14",
+    "pydantic>=2.11.4",
     "pyttsx3>=2.98",
     "pywhatkit>=5.4",
     "speechrecognition>=3.14.2",
